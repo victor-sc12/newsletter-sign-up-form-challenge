@@ -1,0 +1,17 @@
+{
+  "name": "newsletter-sign-up",
+  "version": "1.0.0",
+  "description": "A Frontend Mentor project to test my skills with forms, form validation, and form submission.",
+  "license": "ISC",
+  "author": "bycbash",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass style/scss/main.scss style/css/style.css",
+    "watch:sass": "sass --watch style/scss/main.scss style/css/style.css"
+  },
+  "devDependencies": {
+    "sass": "^1.105.2"
+  }
+}

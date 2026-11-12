@@ -1,0 +1,34 @@
+@use '../abstracts';
+
+:root {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: abstracts.$color-blue-700;
+    margin: 0%;
+    @include abstracts.font-base-roboto;
+
+    @include abstracts.respond-to("tablet") {
+        min-height: 100dvh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+// Screen readers only class
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}

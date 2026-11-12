@@ -1,0 +1,11 @@
+@use '../abstracts';
+
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center;
+    padding-block: 1em;
+    color: abstracts.$color-white;
+    // outline: .5px red solid;
+
+    a {color: abstracts.$color-red;}
+}

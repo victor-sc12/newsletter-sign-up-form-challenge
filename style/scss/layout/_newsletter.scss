@@ -1,0 +1,49 @@
+@use '../abstracts';
+
+.newsletter {
+    background-color: abstracts.$color-white;
+    max-width: 38em;
+    margin-inline: auto;
+
+    @include abstracts.respond-to("tablet"){border-radius: 2.25em;}
+    @include abstracts.respond-to("desktop"){max-width: 56.5em;}
+}
+
+.newsletter__section {
+    padding-block-end: 2.5em;
+    
+    @include abstracts.respond-to("tablet"){padding-block: 2.5em;}
+    
+    @include abstracts.respond-to("desktop") {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 2em;
+        gap: 4em;
+    }
+
+    &--message{display: none;}
+}
+
+.newsletter__img {
+    width: 100%;
+
+    @include abstracts.respond-to("tablet"){
+        display: block;
+        @include abstracts.content-width;
+    }
+
+    @include abstracts.respond-to("desktop"){
+        display: initial;
+        width: 100%;
+    }
+}
+
+.aux-container {
+    @include abstracts.content-width;
+
+    @include abstracts.respond-to("desktop") {
+        width: initial;
+        margin: initial;
+    }
+}

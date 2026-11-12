@@ -1,0 +1,22 @@
+.list {
+    list-style: none;
+    padding-left: 0%;
+
+    :not(:last-child) {
+        margin-block-end: .5em;
+    }
+}
+
+.list__item {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+    &::before {
+        content: '';
+        flex-shrink: 0;
+        width: 21px;
+        height: 21px;
+        background-image: url(/assets/images/icon-list.svg);
+    }
+}

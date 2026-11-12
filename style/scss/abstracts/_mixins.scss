@@ -1,0 +1,13 @@
+@use './breakpoints' as bk;
+@use 'sass:map';
+
+@mixin respond-to($device) {
+    @media (min-width: map.get(bk.$breakpoints, #{$device})) {
+        @content;
+    }
+}
+
+@mixin content-width {
+    width: 87.2%;
+    margin-inline: auto;
+}

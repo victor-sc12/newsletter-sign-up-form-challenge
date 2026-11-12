@@ -1,0 +1,12 @@
+@use './variables';
+
+@mixin font-base-roboto ($font-weight: 400, $font-size: variables.$font-size-body, $color: variables.$color-blue-800){
+    // Font family
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: $font-weight;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-size: $font-size;
+    color: $color;
+}

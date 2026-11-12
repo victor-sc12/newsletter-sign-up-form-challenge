@@ -1,0 +1,9 @@
+@use '../abstracts';
+
+.btn {
+    @include abstracts.font-base-roboto($color: abstracts.$color-white, $font-weight: 700);
+    background-color: abstracts.$color-blue-800;
+    text-wrap: wrap;
+    padding-block: 1em;
+    border-radius: .5em;
+}

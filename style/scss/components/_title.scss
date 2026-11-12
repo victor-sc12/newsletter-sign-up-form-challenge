@@ -1,0 +1,6 @@
+@use '../abstracts';
+
+.title {
+    font-weight: 700;
+    font-size: abstracts.$font-size-heading;
+}

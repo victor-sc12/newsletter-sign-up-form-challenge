@@ -1,0 +1,14 @@
+@use '../abstracts';
+
+.entry-label {
+    font-size: abstracts.$font-size-label;
+    font-weight: 700;
+}
+
+.entry {
+    font-size: abstracts.$font-size-input;
+    border: 2px solid;
+    border-radius: .5em;
+    border-color: abstracts.$color-grey;
+    padding: 1em 0 1em 1.5em;
+}

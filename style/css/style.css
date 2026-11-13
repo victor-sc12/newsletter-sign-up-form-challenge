@@ -69,6 +69,8 @@ body {
 }
 
 .entry {
+  display: block;
+  width: 100%;
   font-size: 1rem;
   border: 2px solid;
   border-radius: 0.5em;
@@ -88,6 +90,15 @@ body {
   text-wrap: wrap;
   padding-block: 1em;
   border-radius: 0.5em;
+}
+.btn:active, .btn:focus-within {
+  background-color: hsl(4, 100%, 67%);
+}
+@media (hover: hover) {
+  .btn:hover {
+    background-color: hsl(4, 100%, 67%);
+    cursor: pointer;
+  }
 }
 
 .newsletter {
@@ -162,9 +173,11 @@ body {
   margin-block-start: 1.5em;
 }
 .form div {
-  display: inherit;
-  flex-direction: inherit;
+  display: flex;
+  justify-content: space-between;
   gap: 0.5em;
+  flex-wrap: wrap;
+  margin-block-end: 0.5em;
 }
 
 .attribution {

@@ -6,6 +6,8 @@
 }
 
 .entry {
+    display: block;
+    width: 100%;
     font-size: abstracts.$font-size-input;
     border: 2px solid;
     border-radius: .5em;

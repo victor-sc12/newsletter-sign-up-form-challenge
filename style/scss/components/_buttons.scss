@@ -6,4 +6,13 @@
     text-wrap: wrap;
     padding-block: 1em;
     border-radius: .5em;
+    
+    &:active, &:focus-within {background-color: abstracts.$color-red;}
+
+    @include abstracts.hover-pointer {
+        &:hover {
+            background-color: abstracts.$color-red;
+            cursor: pointer;            
+        }
+    }
 }

@@ -7,6 +7,12 @@
     }
 }
 
+@mixin hover-pointer {
+    @media (hover: hover) {
+        @content;
+    }
+}
+
 @mixin content-width {
     width: 87.2%;
     margin-inline: auto;

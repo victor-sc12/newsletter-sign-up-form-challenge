@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/css/style.css">
+  <script defer src="/js/script.js"></script>
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
 
@@ -33,11 +34,14 @@
             <li class="list__item"><span>Measuring to ensure updates are a success</span></li>
             <li class="list__item"><span>And much more!</span></li>
         </ul>
-        <form class="form" action="">
-          <div>
-            <label class="entry-label" for="email-entry">Email address</label>
-            <input class="entry" id="email-entry" type="email" placeholder="email@company.com">
-          </div>
+        <form id="sign-up-form" class="form" action="" novalidate>
+          <label>
+            <div>
+              <span class="entry-label">Email address</span>
+              <span class="entry-label entry-label--error" aria-live="polite"></span>
+            </div>
+            <input class="entry" id="email-entry" name="email" type="email" placeholder="email@company.com" required>
+          </label>
           <input class="btn" type="submit" value="Subscribe to monthly newsletter">
         </form>
       </div>
